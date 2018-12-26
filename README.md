@@ -1,6 +1,6 @@
 # CodersClan Frontend Interview Test
 
-###Introduction
+### Introduction
 
 If you are here it means you would like to join our Community as a Frontend developer, this is great!
 Before you will join our community there is a short test we need you to do, a simple PSD to HTML task. Please read in detail this document.
