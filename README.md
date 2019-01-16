@@ -21,7 +21,7 @@ The test doesn't describe the transitions and animations, please do make sure to
 
 ### Expectations
 
-- We are looking for pixel perfect delivery, make sure to match everything exactly as it is in the design, so when using a [pixel-perfect comparession](https://chrome.google.com/webstore/detail/perfectpixel-by-welldonec/dkaagdgjmgdmbnecmcefdhjekcoceebi?hl=en "pixel-perfect comparison"), it will match 100%.
+- We are looking for pixel perfect delivery, make sure to match everything exactly as it is in the design, so when using a [pixel-perfect comparison](https://chrome.google.com/webstore/detail/perfectpixel-by-welldonec/dkaagdgjmgdmbnecmcefdhjekcoceebi?hl=en "pixel-perfect comparison"), it will match 100%.
 - Keep in mind we develop a dynamic website, make sure to consider the option of repeatable items, different image sizes, and different text, the page should look great regardless of the content in it.
 - We expect the code to be minimal, very organized and linted. We won't accept "Spaghetti" code even if the frontend looks perfect. Keep in mind that your code when working with us will be sliced to sections and integrated into WordPress, make the backend developer life easier.
 - It goes without saying the delivery should be responsive to support all device resolutions
