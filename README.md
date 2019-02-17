@@ -11,7 +11,7 @@ Before you will join our community there is a short test we need you to do, a si
 - Create a new branch to work on (feel free to name it as you'd like)
 - Open the "frontesnd-test.png" file to see what is expected from you to deliver, this file includes behavior guidelines that you will need to implement
 - The source files are frontend-test.psd and frontend-test-mobile.psd
-- On top of that we would also like you to create a parallax effect for the hero section similar to the one shown in "[parallax_demo](https://drive.google.com/file/d/1AY1pVKNKyBM_ktgCEOIq40r3E5o8_FmT/view?usp=sharing)"
+- On top of that we would also like you to create a parallax effect for the hero section similar to the one shown in [parallax_demo](https://drive.google.com/file/d/1AY1pVKNKyBM_ktgCEOIq40r3E5o8_FmT/view?usp=sharing)
 - parallax_demo can be downloaded here: ()
 - Open the "frontend.json" file to get the variables you'll need to connect as assets to the work
 - Create a new project in the branch which will include sass and javascript compiler, we expect you to develop the page with SCSS and ES6, preferred with Node.JS and Pug (Jade) templating.
