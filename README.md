@@ -29,7 +29,6 @@ The test doesn't describe the transitions and animations, please do make sure to
 - We expect the code to be minimal, very organized and linted. We won't accept "Spaghetti" code even if the frontend looks perfect. Keep in mind that your code when working with us will be sliced to sections and integrated into WordPress, make the backend developer life easier.
 - It goes without saying the delivery should be responsive to support all device resolutions
 - Other than the behavior explaind in "frontend-test.png", we would like to have a parallax effect fo the hero image. The image is set to different layers in the PSD - "frontend-test.psd" and we would like to have a similar behavior as the one in the demo the how the different layers will behave on the hero section while scrolling.
-- ALl transitions required should have an animation set for "smoother" feeling
 
 ### What we will test in your delivery
 
