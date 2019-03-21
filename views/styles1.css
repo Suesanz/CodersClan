@@ -64,8 +64,7 @@ body {
     /*padding-right: 6.8vw !important;*/
     padding-top: 1.3rem !important;
     padding-bottom: 1.4rem !important;
-    transform: scale(0.25,0.8);
-
+    transform: scale(0.25, 0.8);
 
     /*min-width: 97px;*/
     /*min-height: 98px;*/
@@ -228,9 +227,38 @@ body {
 .pt-4 {
     padding-top: 4.3rem !important;
 }
+
 @media (max-width: 575px) {
-    .btn-outline-primary{
+    .btn-outline-primary {
         width: 90vw;
     }
 }
 
+@media (max-width: 991.99px) {
+    .card1 .card-title, .card2 .card-title {
+        line-height: 15px;
+        font-size: 18px;
+    }
+
+    .card-text {
+        line-height: 18px;
+    }
+}
+
+@media (max-width: 766px) and (min-width: 576px) {
+    .card1 .card-title, .card2 .card-title {
+        line-height: 12px;
+        font-size: 15px;
+    }
+
+    .card-text {
+        line-height: 12px;
+        font-size: 10px;
+    }
+
+    .px1-3 {
+        padding-bottom: 0 !important;
+        padding-top: 0 !important;
+        transform: scale(0.4, 0.6);
+    }
+}

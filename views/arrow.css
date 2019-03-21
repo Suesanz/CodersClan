@@ -61,7 +61,38 @@ a {
     -webkit-transform: rotate(45deg);
     transform: rotate(45deg);
 }
-@media (max-width: 570px) {
+@media (max-width: 986px) {
+    .right1{
+        margin-top: 8rem;
+        /*margin-bottom: 1rem;*/
+    }
+
+    .right1 {
+        display: inline-block;
+        /*margin-top: 8.7vw;*/
+        width: 2.2em;
+        height: 2.2em;
+        border: 0.3em rgba(79, 78, 77, 0.2);
+        border-radius: 50%;
+        margin-left: 0em;
+        /*margin-right: 0.2em;*/
+        background-color: rgba(79, 78, 77, 0.2);
+    }
+
+    .right1:after {
+
+        margin-top: 0.76em;
+        margin-left: -0.4em;
+        width: 0.8em;
+        height: 0.8em;
+        border-top: 0.27em solid #ffffff;
+        border-right: 0.27em solid #ffffff;
+        -moz-transform: rotate(45deg);
+        -webkit-transform: rotate(45deg);
+        transform: rotate(45deg);
+    }
+}
+@media (max-width: 575.5px) {
     .right1{
         margin-top: 1rem;
         margin-bottom: 1rem;
