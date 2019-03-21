@@ -1,0 +1,236 @@
+.banner {
+    /*margin: 0!important;*/
+    width: 100%;
+    /*max-width: 104% ;*/
+    height: 24.6%;
+}
+
+body {
+    /*overflow-: hidden;*/
+}
+
+.heading-text {
+    font-family: myriad pro, sans-serrif;
+    color: #4f4e4d;
+    font-size: 41.8px;
+    font-weight: 700;
+    /*line-height: 99.89px;*/
+    text-align: center;
+
+}
+
+.pt-5 {
+    padding-top: 4rem !important;
+}
+
+.card-cont {
+    /*margin-left: 9rem!important;*/
+    /*margin-right:9rem!important; ;*/
+}
+
+.line {
+    background-color: #ff8108;
+    width: 68px;
+    height: 2px;
+    text-align: center;
+    margin-bottom: 4.35vw;
+}
+
+.card-text {
+    font-family: 'Myriad Pro';
+    color: #8c8c8c;
+    font-size: 12px;
+    /*font-weight: 400;*/
+    line-height: 20px;
+    text-align: left;
+}
+
+.card1 .card-title {
+    font-family: 'Myriad Pro';
+    color: #4f4e4d;
+    font-size: 20px;
+    font-weight: 400;
+    /*line-height: 99.89px;*/
+    text-align: left !important;
+    margin-top: 1rem;
+}
+
+.card-body {
+    padding: 0 !important;
+}
+
+.px1-3 {
+    /*padding-left: 7rem !important;*/
+    /*padding-right: 6.8vw !important;*/
+    padding-top: 1.3rem !important;
+    padding-bottom: 1.4rem !important;
+    transform: scale(0.25,0.8);
+
+
+    /*min-width: 97px;*/
+    /*min-height: 98px;*/
+    /*width: 97px;*/
+    /*height: 98px;*/
+}
+
+.btn {
+    border-radius: 10px;
+    border-style: solid;
+    border-width: 2px;
+    box-sizing: border-box;
+    background-color: #ffffff;
+    width: 220px;
+    height: 51px;
+    /*text-align: center;*/
+}
+
+.button {
+    text-align: center;
+}
+
+.btn:hover {
+    color: #ffffff;
+    border-radius: 10px;
+    background: -webkit-linear-gradient(145deg, #5c27fe 23%, #c165dd 77%);
+    background: -moz-linear-gradient(145deg, #5c27fe 23%, #c165dd 77%);
+    background: -o-linear-gradient(145deg, #5c27fe 23%, #c165dd 77%);
+    background: -ms-linear-gradient(145deg, #5c27fe 23%, #c165dd 77%);
+    background: linear-gradient(-55deg, #5c27fe 23%, #c165dd 77%);
+    /*width: 220px;*/
+    /*height: 52px;*/
+
+}
+
+.btn span {
+    font-family: 'Myriad Pro';
+    color: #6f32f8;
+    font-size: 20px;
+    font-weight: 200;
+    /*line-height: 99.89px;*/
+    text-align: center;
+}
+
+.btn-outline-primary {
+    border-color: #6f32f8;
+}
+
+.btn-outline-primary:hover {
+    border-color: white;
+    color: white;
+}
+
+.btn span:hover {
+    /*color: white;*/
+}
+
+.card1 {
+    border-radius: 10px;
+    border-style: solid;
+    border-width: 2px;
+    border-color: #e8e8e8;
+    box-sizing: border-box;
+    background-color: #ffffff;
+    box-shadow: 0px 0px 21px 0px rgba(0, 0, 0, 0.13);
+    /*width: 395px;*/
+    /*height: 388px;*/
+}
+
+.card1:hover {
+    border-style: solid;
+    border-width: 5px;
+    border-image: linear-gradient(-55deg, #5c27fe 3%, #c165dd 97%);
+    border-image-slice: 1;
+}
+
+.card2 {
+    border-radius: 10px;
+    background-color: #ffffff;
+    box-shadow: 0px 0px 21px 0px rgba(0, 0, 0, 0.13);
+    /*width: 395px;*/
+    /*height: 388px;*/
+}
+
+.card2 .card-text {
+    text-align: center;
+}
+
+.card2 .card-title {
+
+    text-align: center;
+}
+
+.card2:hover {
+    transform: scale(1.1);
+    border-radius: 10px;
+    border-style: solid;
+    border-width: 2px;
+    border-color: #e8e8e8;
+    color: #ffffff !important;
+    box-sizing: border-box;
+    background: -webkit-linear-gradient(145deg, #5c27fe 3%, #c165dd 97%);
+    background: -moz-linear-gradient(145deg, #5c27fe 3%, #c165dd 97%);
+    background: -o-linear-gradient(145deg, #5c27fe 3%, #c165dd 97%);
+    background: -ms-linear-gradient(145deg, #5c27fe 3%, #c165dd 97%);
+    background: linear-gradient(-55deg, #5c27fe 3%, #c165dd 97%);
+    box-shadow: 0px 0px 21px 0px rgba(0, 0, 0, 0.13);
+    width: 395px;
+    height: 388px;
+}
+
+.card2 {
+    /*margin-left: 2rem!important;*/
+}
+
+.card {
+    /*width: 15cm!important;*/
+}
+
+.card3 {
+    border-radius: 10px;
+    border-style: solid;
+    border-width: 2px;
+    border-color: #e8e8e8;
+    /*width: 395px;*/
+    /*height: 388px;*/
+
+}
+
+.card3 .img {
+    margin-top: -0.8rem;
+    margin-left: -0.2rem;
+    margin-right: -0.8rem;
+    height: 20.5rem;
+    /*width: 21.75rem;*/
+}
+
+.card-deck > .card {
+    height: 19.3rem !important;
+    /*width: 9rem !important;*/
+
+}
+
+.card-body {
+    padding-left: 1.25rem !important;
+    padding-right: 1.25rem !important;
+
+}
+
+.img1 {
+    transform: scale(0.9, 0.8) !important;
+}
+
+.card1 .card2 {
+    transform: scale(0.4, 0.4) !important;
+    /*width: 18rem!important;*/
+
+}
+
+.pt-4 {
+    padding-top: 4.3rem !important;
+}
+@media (max-width: 575px) {
+    .btn-outline-primary{
+        width: 90vw;
+    }
+}
+
