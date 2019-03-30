@@ -1,0 +1,78 @@
+doctype html
+html(lang='en')
+    head
+        meta(charset='UTF-8')
+        title CodersClan
+        meta(name='viewport', content='width=device-width, initial-scale=1, shrink-to-fit=no')
+        link(rel='stylesheet', href='https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css', integrity='sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T', crossorigin='anonymous')
+        script(src='http://code.jquery.com/jquery-3.3.1.js', integrity='sha256-2Kok7MbOyxpgUVvAk/HJ2jigOSYS2auK4Pfzbm7uH60=', crossorigin='anonymous')
+        script(src='https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js', integrity='sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1', crossorigin='anonymous')
+        script(src='https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js', integrity='sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM', crossorigin='anonymous')
+        link(rel='stylesheet', href='https://use.typekit.net/ofh6hwj.css')
+        link(href='styles1.css', rel='stylesheet')
+        link(href='arrow.css', rel='stylesheet')
+    body
+        img.banner(src='./Rectangle%2010.jpg')
+        .container.bannercont
+            .row
+                .col-sm
+                    // $. `arrItems[0]`
+        .container-fluid1
+        .container
+            .row
+                .col-sm.pt-5.pr-1
+                    h1#h1.heading-text
+                        script.
+                            $(document).ready(function () {
+                                $.getJSON("./frontend.json", function (data) {
+                                    const arrItems = [];      // THE ARRAY TO STORE JSON ITEMS.
+                                    $.each(data, function (index, value) {
+                                        arrItems.push(value);       // PUSH THE VALUES INSIDE THE ARRAY.
+                                    });
+                                    document.getElementById("h1").innerHTML = arrItems[0];
+                                    document.getElementById("card_title_1").innerHTML = arrItems[1][0].title;
+                                    document.getElementById("card_title_2").innerHTML = arrItems[1][1].title;
+                                    document.getElementById("card_text_1").innerHTML = arrItems[1][0].text;
+                                    document.getElementById("card_text_1").innerHTML = arrItems[1][1].text;
+                                    document.getElementById("button_text").innerHTML = arrItems[2];
+                                    // v.innerHTML=arrItems[0];
+                                })
+                            })
+        .container.line
+            .row
+                .col
+        .container.card-cont
+            .row
+                .col
+                    .card-deck
+                        .card.card1
+                            img.card-img-top.img1(src='../pics/Layer%202.jpg', alt='...')
+                            .card-body
+                                #card_title_1.card-title Anean nec sem vestibulum
+                                p#card_text_1.card-text
+                                    | Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas et dolor
+                                    | est.
+                                    | Proin dictum lacus vitae posuere volutpat.
+                        div
+                            a(href='#')
+                                span.right1
+                        .card.card2
+                            img.px1-3(src='../pics/Forma%201.jpg', alt='...')
+                            .card-body
+                                h5#card_title_2.card-title Anean nec sem vestibulum
+                                p#card_text_2.card-text
+                                    | Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas
+                                    | et dolor
+                                    | est.
+                                    | Proin dictum lacus vitae posuere volutpat.
+                        div
+                            a(href='#')
+                                span.right1
+                        .card.card3
+                            img.img(src='../pics/coderClan-03.jpg', alt='...')
+                            .card-body
+        .container
+            .row
+                .col-sm.pt-4.pr-1.button
+                    button.btn.btn-outline-primary.btn-large.but(type='button')
+                        span#button_text
