@@ -3,16 +3,24 @@
     width: 100%;
     /*max-width: 104% ;*/
     height: 24.6%;
+    background-image: url("./pics/frontend-testHero banner.jpg");
+    background-attachment: fixed!important;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+
 }
 
 body {
-    /*overflow-: hidden;*/
+/*overflow: hidden;*/
+    padding-bottom: 15px!important;
 }
 
 .heading-text {
     font-family: myriad pro, sans-serrif;
     color: #4f4e4d;
-    font-size: 41.8px;
+    /*font-size: 2.6125rem;*/
+    font-size: calc(21px + 1.35vw);
     font-weight: 700;
     /*line-height: 99.89px;*/
     text-align: center;
@@ -72,22 +80,78 @@ body {
     /*height: 98px;*/
 }
 
+/*.btn {*/
+/*border-radius: 10px;*/
+/*border-style: solid;*/
+/*border-width: 2px;*/
+/*box-sizing: border-box;*/
+/*background-color: #ffffff;*/
+/*width: 220px;*/
+/*height: 51px;*/
+/*!*text-align: center;*!*/
+/*font-family: 'Myriad Pro';*/
+/*color: #6f32f8;*/
+
+/*font-size: 20px;*/
+/*font-weight: 200;*/
+/*!*line-height: 99.89px;*!*/
+/*text-align: center;*/
+/*}*/
+
+/*.button {*/
+/*text-align: center;*/
+/*}*/
+
+/*.btn:hover {*/
+/*color: #ffffff;*/
+/*border-radius: 10px;*/
+/*background: -webkit-linear-gradient(145deg, #5c27fe 23%, #c165dd 77%);*/
+/*background: -moz-linear-gradient(145deg, #5c27fe 23%, #c165dd 77%);*/
+/*background: -o-linear-gradient(145deg, #5c27fe 23%, #c165dd 77%);*/
+/*background: -ms-linear-gradient(145deg, #5c27fe 23%, #c165dd 77%);*/
+/*background: linear-gradient(-55deg, #5c27fe 23%, #c165dd 77%);*/
+/*!*width: 220px;*!*/
+/*!*height: 52px;*!*/
+/*border-width: 0px;*/
+
+/*}*/
+
+/*.btn-outline-primary {*/
+/*border-image: linear-gradient(-55deg, #5c27fe 3%, #c165dd 97%);*/
+/*border-image-slice: 1;*/
+/*}*/
+
+/*.btn-outline-primary:hover {*/
+/*border-color: white;*/
+/*color: white;*/
+/*}*/
+
+/*.btn span:hover {*/
+/*!*color: white;*!*/
+/*}*/
 .btn {
-    border-radius: 10px;
+    background: linear-gradient(-55deg, #5c27fe 3%, #c165dd 97%);
+    border-radius: 8px;
+
+    display: inline-block;
+    font-size: 20px;
+    padding: 1px;
+    text-decoration: none;
     border-style: solid;
-    border-width: 2px;
-    box-sizing: border-box;
-    background-color: #ffffff;
+    /*border-width: 2px;*/
     width: 220px;
     height: 51px;
-    /*text-align: center;*/
 }
 
-.button {
-    text-align: center;
+.btn span {
+    background: #fff;
+    display: block;
+    color: #6f32f8;
+    padding: 0.41em;
+    border-radius: 6px;
 }
 
-.btn:hover {
+.btn span:hover {
     color: #ffffff;
     border-radius: 10px;
     background: -webkit-linear-gradient(145deg, #5c27fe 23%, #c165dd 77%);
@@ -97,20 +161,8 @@ body {
     background: linear-gradient(-55deg, #5c27fe 23%, #c165dd 77%);
     /*width: 220px;*/
     /*height: 52px;*/
+    border-width: 0px;
 
-}
-
-.btn span {
-    font-family: 'Myriad Pro';
-    color: #6f32f8;
-    font-size: 20px;
-    font-weight: 200;
-    /*line-height: 99.89px;*/
-    text-align: center;
-}
-
-.btn-outline-primary {
-    border-color: #6f32f8;
 }
 
 .btn-outline-primary:hover {
@@ -118,15 +170,16 @@ body {
     color: white;
 }
 
-.btn span:hover {
-    color: white;
+.btn-outline-primary {
+    border-color: #5c27fe;
 }
 
 .card1 {
     border-radius: 10px;
-    border-style: solid;
-    border-width: 2px;
-    border-color: #e8e8e8;
+    /*border-style: solid;*/
+    /*border-width: 2px;*/
+    border: 5px solid transparent;
+    /*border-color: #e8e8e8;*/
     box-sizing: border-box;
     background-color: #ffffff;
     box-shadow: 0px 0px 21px 0px rgba(0, 0, 0, 0.13);
@@ -143,6 +196,8 @@ body {
 
 .card2 {
     border-radius: 10px;
+    border: 2px solid transparent;
+    /*border-right:15px ;*/
     background-color: #ffffff;
     box-shadow: 0px 0px 21px 0px rgba(0, 0, 0, 0.13);
     /*width: 395px;*/
@@ -195,10 +250,14 @@ body {
 }
 
 .card3 .img {
-    margin-top: -0.8rem;
+    margin-top: -0.95rem;
     margin-left: -0.2rem;
     margin-right: -0.8rem;
-    height: 20.5rem;
+    height: 21rem;
+
+}
+
+.card3 {
     /*width: 21.75rem;*/
 }
 
@@ -215,7 +274,7 @@ body {
 }
 
 .img1 {
-    transform: scale(0.9, 0.8) !important;
+    transform: scale(0.935, 0.851) !important;
 }
 
 .card1 .card2 {
@@ -262,3 +321,15 @@ body {
         transform: scale(0.4, 0.6);
     }
 }
+
+.card2 {
+    /*border: 5px solid transparent;*/
+    /*margin-right: 15px !important;*/
+    /*width: 4cm;*/
+}
+@media only screen and (max-device-width: 1366px) {
+    .parallax {
+        background-attachment: scroll;
+    }
+}
+

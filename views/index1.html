@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>CodersClan</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+          integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <script src="http://code.jquery.com/jquery-3.3.1.js" integrity="sha256-2Kok7MbOyxpgUVvAk/HJ2jigOSYS2auK4Pfzbm7uH60="
+            crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+            integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+            crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+            integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+            crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://use.typekit.net/ofh6hwj.css">
+    <link href="styles1.css" rel="stylesheet">
+    <link href="style.css" rel="stylesheet">
+    <link href="arrow.css" rel="stylesheet">
+
+</head>
+
+<body>
+
+<div id="pp">
+      <script>
+        $(document).ready(function jqUpdateSize() {
+            $.getJSON("./frontend.json", function (data) {
+                const arrItems = [];      // THE ARRAY TO STORE JSON ITEMS.
+                $.each(data, function (index, value) {
+                    arrItems.push(value);       // PUSH THE VALUES INSIDE THE ARRAY.
+                });
+                document.getElementById("h1").innerHTML = arrItems[0];
+                document.getElementById("card_title_1").innerHTML = arrItems[1][0].title;
+                document.getElementById("card_title_2").innerHTML = arrItems[1][1].title;
+                document.getElementById("card_text_2").innerHTML = arrItems[1][0].text;
+                document.getElementById("card_text_1").innerHTML = arrItems[1][1].text;
+                document.getElementById("button_text").innerHTML = arrItems[2];
+                // v.innerHTML=arrItems[0];
+            })
+
+                // function jqUpdateSize() {
+                // Get the dimensions of the viewport
+                let
+                width = $(window).width();
+                // $(document).ready(jqUpdateSize);    // When the page first loads
+                $(window).resize(jqUpdateSize);
+                console.log(width)
+                if (width <= 1000) {
+                    document.getElementById('pp').innerHTML = "<img class=\"banner\" src=\"../pics/frontend-testHero%20banner.jpg\">" +
+                        " <div class=\"container bannercont\">\n" +
+                        "            <div class=\"row\">\n" +
+                        "                <div class=\"col-sm\">\n" +
+                        "                    <!-- $. `arrItems[0]`-->\n" +
+                        "                </div>\n" +
+                        "            </div>\n" +
+                        "        </div>\n" +
+                        "        <div class=\"container-fluid1\"></div>\n" +
+                        "        <div class=\"container\">\n" +
+                        "            <div class=\"row\">\n" +
+                        "                <div class=\"col-sm pt-5 pr-1\">\n" +
+                        "                    <h1 class=\"heading-text\" id=\"h1\">\n" +
+                        // "                        CodersClan Frontend Test\n" +
+                        "                    </h1>\n" +
+                        "                </div>\n" +
+                        "            </div>\n" +
+                        "        </div>\n" +
+                        "        <div class=\"container line\">\n" +
+                        "            <div class=\"row\">\n" +
+                        "                <div class=\"col\"></div>\n" +
+                        "            </div>\n" +
+                        "        </div>\n" +
+                        "        <div class=\"container card-cont\">\n" +
+                        "            <div class=\"row\">\n" +
+                        "                <div class=\"col\">\n" +
+                        "                    <div class=\"card-deck\">\n" +
+                        "                        <div class=\"card card1\"><img class=\"card-img-top img1\" src=\"../pics/pics/Layer%202.jpg\" alt=\"...\">\n" +
+                        "                            <div class=\"card-body\">\n" +
+                        "                                <div class=\"card-title\" id=\"card_title_1\">Anean nec sem vestibulum</div>\n" +
+                        "                                <p class=\"card-text\" id=\"card_text_1\">\n" +
+                        // "                                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas et dolor\n" +
+                        // "                                    est.\n" +
+                        // "                                    Proin dictum lacus vitae posuere volutpat.\n" +
+                        "                                </p>\n" +
+                        "                            </div>\n" +
+                        "                        </div>\n" +
+                        "                        <div class=\"arrow\"><a href=\"#\"><span class=\"right1\"></span></a></div>\n" +
+                        "                        <div class=\"card card2\"><img class=\"px1-3\" src=\"../pics/Forma%201.jpg\" alt=\"...\">\n" +
+                        "                            <div class=\"card-body\">\n" +
+                        "                                <h5 class=\"card-title\" id=\"card_title_2\">Anean nec sem vestibulum</h5>\n" +
+                        "                                <p class=\"card-text\" id=\"card_text_2\">\n" +
+                        // "                                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas\n" +
+                        // "                                    et dolor\n" +
+                        // "                                    est.\n" +
+                        // "                                    Proin dictum lacus vitae posuere volutpat.\n" +
+                        "                                </p>\n" +
+                        "                            </div>\n" +
+                        "                        </div>\n" +
+                        "                        <div class=\"arrow\"><a href=\"#\"><span class=\"right1\" id=\"r1\"></span></a></div>\n" +
+                        "                        <div class=\"card card3\"><img class=\"img\" src=\"../pics/coderClan-03.jpg\" alt=\"...\">\n" +
+                        "                            <div class=\"card-body\"></div>\n" +
+                        "                        </div>\n" +
+                        "                    </div>\n" +
+                        "                </div>\n" +
+                        "            </div>\n" +
+                        "        </div>\n" +
+                        "        <div class=\"container\">\n" +
+                        "            <div class=\"row\">\n" +
+                        "                <div class=\"col-sm pt-4 pr-1 button\">\n" +
+                        "                    <button class=\"btn btn-outline-primary btn-large but\" type=\"button\"><span id='button_text'></span>\n" +
+                        "                    </button>\n" +
+                        "                </div>\n" +
+                        "            </div>\n" +
+                        "        </div>";
+                }
+                else {
+                    document.getElementById('pp').innerHTML = "<div class=\"parallax\">\n" +
+                        "    <div>\n" +
+                        "        <div class=\"parallax__layer parallax__layer__0\">\n" +
+                        "            <img src=\"../pics/2.png\"/>\n" +
+                        "        </div>\n" +
+                        "        <div class=\"parallax__layer parallax__layer__1\">\n" +
+                        "            <img src=\"../pics/1%20(1).png\"/>\n" +
+                        "        </div>\n" +
+                        "        <div class=\"parallax__layer parallax__layer__2\">\n" +
+                        "            <img src=\"../pics/1%20(2).png\"/>\n" +
+                        "        </div>\n" +
+                        "    </div>\n" +
+                        "\n" +
+                        "    <!--<div class=\"parallax__cover\"></div>-->\n" +
+                        "    <!--</div>-->\n" +
+                        "\n" +
+                        "    <div class=\"parallax__cover\">\n" +
+                        "        <div class=\"container bannercont\">\n" +
+                        "            <div class=\"row\">\n" +
+                        "                <div class=\"col-sm\">\n" +
+                        "                    <!-- $. `arrItems[0]`-->\n" +
+                        "                </div>\n" +
+                        "            </div>\n" +
+                        "        </div>\n" +
+                        "        <div class=\"container-fluid1\"></div>\n" +
+                        "        <div class=\"container\">\n" +
+                        "            <div class=\"row\">\n" +
+                        "                <div class=\"col-sm pt-5 pr-1\">\n" +
+                        "                    <h1 class=\"heading-text\" id=\"h1\">\n" +
+                        // "                        CodersClan Frontend Test\n" +
+                        "                    </h1>\n" +
+                        "                </div>\n" +
+                        "            </div>\n" +
+                        "        </div>\n" +
+                        "        <div class=\"container line\">\n" +
+                        "            <div class=\"row\">\n" +
+                        "                <div class=\"col\"></div>\n" +
+                        "            </div>\n" +
+                        "        </div>\n" +
+                        "        <div class=\"container card-cont\">\n" +
+                        "            <div class=\"row\">\n" +
+                        "                <div class=\"col\">\n" +
+                        "                    <div class=\"card-deck\">\n" +
+                        "                        <div class=\"card card1\"><img class=\"card-img-top img1\" src=\"../pics/pics/Layer%202.jpg\" alt=\"...\">\n" +
+                        "                            <div class=\"card-body\">\n" +
+                        "                                <div class=\"card-title\" id=\"card_title_1\">Anean nec sem vestibulum</div>\n" +
+                        "                                <p class=\"card-text\" id=\"card_text_1\">\n" +
+                        // "                                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas et dolor\n" +
+                        // "                                    est.\n" +
+                        // "                                    Proin dictum lacus vitae posuere volutpat.\n" +
+                        "                                </p>\n" +
+                        "                            </div>\n" +
+                        "                        </div>\n" +
+                        "                        <div class=\"arrow\"><a href=\"#\"><span class=\"right1\"></span></a></div>\n" +
+                        "                        <div class=\"card card2\"><img class=\"px1-3\" src=\"../pics/Forma%201.jpg\" alt=\"...\">\n" +
+                        "                            <div class=\"card-body\">\n" +
+                        "                                <h5 class=\"card-title\" id=\"card_title_2\">Anean nec sem vestibulum</h5>\n" +
+                        "                                <p class=\"card-text\" id=\"card_text_2\">\n" +
+                        // "                                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas\n" +
+                        // "                                    et dolor\n" +
+                        // "                                    est.\n" +
+                        // "                                    Proin dictum lacus vitae posuere volutpat.\n" +
+                        "                                </p>\n" +
+                        "                            </div>\n" +
+                        "                        </div>\n" +
+                        "                        <div class=\"arrow\"><a href=\"#\"><span class=\"right1\" id=\"r1\"></span></a></div>\n" +
+                        "                        <div class=\"card card3\"><img class=\"img\" src=\"../pics/coderClan-03.jpg\" alt=\"...\">\n" +
+                        "                            <div class=\"card-body\"></div>\n" +
+                        "                        </div>\n" +
+                        "                    </div>\n" +
+                        "                </div>\n" +
+                        "            </div>\n" +
+                        "        </div>\n" +
+                        "        <div class=\"container\">\n" +
+                        "            <div class=\"row\">\n" +
+                        "                <div class=\"col-sm pt-4 pr-1 button\">\n" +
+                        "                    <button class=\"btn btn-outline-primary btn-large but\" type=\"button\"><span id='button_text'></span>\n" +
+                        "                    </button>\n" +
+                        "                </div>\n" +
+                        "            </div>\n" +
+                        "        </div>\n" +
+                        "    </div>\n" +
+                        "</div>";
+                }
+            })
+
+
+</script>
+
+</div>
+
+
+</body>
+
+</html>
